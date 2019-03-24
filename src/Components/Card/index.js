@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {CardContainer, Image, Description, Price, ButtonContainer} from './styles'
+import {CardContainer, CardInfo, Image, Description, ButtonContainer, DetailButtonContainer, PriceContainer} from './styles'
 import Button from '../Button';
 
 class Card extends Component {
@@ -8,15 +8,22 @@ class Card extends Component {
     const {image, title, price} = this.props;
     return (
       <CardContainer>
-        <Image src={image}/>
-        <Description>
-          <p>{title}</p>
-        </Description>
-        <Price>
-          <p>{price}</p>
-        </Price>
+        <CardInfo>
+            <Image src={image}/>
+            <Description>
+              <p>{title}</p>
+            </Description>
+            <PriceContainer>
+              <Button type='black'>
+                {price}
+              </Button>
+          </PriceContainer>
+        </CardInfo>
         <ButtonContainer>
           <Button type='primary'> Book Now </Button>
+          <DetailButtonContainer>
+            <Button type='secundary'> More Details </Button>
+          </DetailButtonContainer>
         </ButtonContainer>
      </CardContainer>
     );

@@ -8,6 +8,7 @@ export const colors = {
     SilverChalice: '#A2A2A2',
     Alto: '#D2D2D2',
     White: '#FFFFFF',
+    Black: '#000000'
 }
   
 export const fontWeights = {
@@ -16,7 +17,7 @@ export const fontWeights = {
 }
   
 export const sizes = {
-    L: '22px',
+    L: '35px',
     M: '16px',
     S: '14px',
     XS: '12px',
@@ -26,6 +27,7 @@ export const lineHeight = {
     L: '24px',
     M: '20px',
     S: '16px',
+    SX: '5px',
 }
 
 export const fontFamily = {

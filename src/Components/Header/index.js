@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HeaderContainer, Title, Slogan} from './styles';
+import {HeaderContainer, Title, Section, SectionContainer} from './styles';
 
 class Header extends Component {
    
@@ -7,7 +7,11 @@ class Header extends Component {
     return (
       <HeaderContainer>
         <Title> SpotaRoom </Title>
-        <Slogan> Find your best rooms </Slogan>
+        <SectionContainer>
+          <Section href="https://www.w3schools.com"> the company </Section>
+          <Section href="https://www.w3schools.com"> How we Work </Section>
+          <Section href="https://www.w3schools.com"> Contact Us </Section>
+        </SectionContainer>
      </HeaderContainer>
     );
   }
